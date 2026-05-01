@@ -8,19 +8,21 @@ BrStudentMH is a dataset in Portuguese comprising 943 posts and 15,680 comments 
 
 ## Methodology
 
-**Figure 1. Proposed pipeline. (A) Data collection. (B) Mental health categorization and validation. (C) Academic level categorization and validation. (D) Anonymization of posts and comments.**
+**Figure 1. Proposed pipeline. (A) Data collection. (B) Mental health categorization and validation. (C) Academic level categorization and validation. (D) Pseudonymization of posts and comments.**
 
 <p align="center">
   <img src="https://github.com/MaiconChavesMarques/BrStudentMH-dataset/blob/main/Images/Pipeline.jpg">
 </p>
 
-Data were collected via the Reddit API (PRAW library) from three subreddits, r/USP, r/faculdadeBR, and r/askacademico, using 52 mental health-related keywords, yielding an initial set of 4,811 posts. Large Language Models (DeepSeek V3, ChatGPT 4o, Grok 3, and Gemini 2.5 Pro) were then used to filter and categorize posts by mental health relevance and academic level (applicant, admitted, undergraduate, or graduate), with validation via majority voting and human review for tie-breaking. Finally, the data were anonymized using regular expressions and Named Entity Recognition (NER) to mask sensitive information such as names, emails, personal documents, and user mentions.
+Data were collected via the Reddit API (PRAW library) from three subreddits, r/USP, r/faculdadeBR, and r/askacademico, using 52 mental health-related keywords, yielding an initial set of 4,811 posts. Large Language Models (DeepSeek V3, ChatGPT 4o, Grok 3, and Gemini 2.5 Pro) were then used to filter and categorize posts by mental health relevance and academic level (applicant, admitted, undergraduate, or graduate), with validation via majority voting and human review for tie-breaking. Finally, the data were pseudonymized using regular expressions and Named Entity Recognition (NER) to mask sensitive information such as names, emails, personal documents, and user mentions.
 
 ---
 
 ## Data Dictionary
 
 The dataset is provided in `.json` format, in which each field acts as a key that returns the corresponding associated information, organized into two files: **posts** and **comments**. Tables 1 and 2 present the type and a brief description of each field. The relationships between the two files and their corresponding fields can be observed in the entity–relationship diagram below.
+
+Additionally, both keywords and academic level labels are represented in PT-BR, consistent with the language used in post titles, post bodies, and comment texts. The academic level values are: VESTIBULAR, INICIO, GRADUAÇÃO, and POS-GRADUAÇÃO (corresponding to Applicant, Admitted, Undergraduate, and Graduate, respectively).
 
 **Table 1. Data dictionary for the Posts**
 
