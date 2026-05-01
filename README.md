@@ -14,7 +14,7 @@ BrStudentMH is a dataset in Portuguese comprising 943 posts and 15,680 comments 
   <img src="https://github.com/MaiconChavesMarques/BrStudentMH-dataset/blob/main/Images/Pipeline.jpg">
 </p>
 
-Data were collected via the Reddit API (PRAW library) from three subreddits, r/USP, r/faculdadeBR, and r/askacademico, using 52 mental health-related keywords, yielding an initial set of 4,811 posts. Large Language Models (DeepSeek V3, ChatGPT 4o, Grok 3, and Gemini 2.5 Pro) were then used to filter and categorize posts by mental health relevance and academic level (applicant, admitted, undergraduate, or graduate), with validation via majority voting and human review for tie-breaking. Finally, the data were pseudonymized using regular expressions and Named Entity Recognition (NER) to mask sensitive information such as names, emails, personal documents, and user mentions.
+Data were collected via the Reddit API (PRAW library) from three subreddits, r/USP, r/faculdadeBR, and r/askacademico, using 65 mental health-related keywords, yielding an initial set of 4,811 posts. Large Language Models (DeepSeek V3, ChatGPT 4o, Grok 3, and Gemini 2.5 Pro) were then used to filter and categorize posts by mental health relevance and academic level (applicant, admitted, undergraduate, or graduate), with validation via majority voting and human review for tie-breaking. Finally, the data were pseudonymized using regular expressions and Named Entity Recognition (NER) to mask sensitive information such as names, emails, personal documents, and user mentions.
 
 ---
 
