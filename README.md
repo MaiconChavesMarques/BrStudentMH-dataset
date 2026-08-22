@@ -1,5 +1,7 @@
 # BrStudentMH: A Reddit Dataset for Mental Health Analysis in the Brazilian University Context
 
+[**Paper**](https://sol.sbc.org.br/index.php/dsw/article/view/44060) | [**PDF**](https://sol.sbc.org.br/index.php/dsw/article/view/44060/43823)
+
 ## Introduction
 
 BrStudentMH is a dataset in Portuguese comprising 943 posts and 15,680 comments collected from Brazilian university-related subreddits. It aims to provide a structured resource for research on the mental health of Brazilian university students, taking advantage of the anonymity provided by Reddit, which makes it a space where users discuss sensitive topics without fear of judgment.
